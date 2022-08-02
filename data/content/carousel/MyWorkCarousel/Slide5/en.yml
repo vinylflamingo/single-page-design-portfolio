@@ -1,0 +1,8 @@
+id: slide5
+displayName: Carousel Slide 5
+# Template defines the available fields. See /sitecore/definitions/templates/Styleguide-ContentList-Template.sitecore.js
+template: Carousel-Slide-Template
+fields:
+  image:
+    src: /data/media/img/image-slide-5.jpg
+    alt: Sitecore Logo
