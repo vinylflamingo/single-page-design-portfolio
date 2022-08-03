@@ -42,7 +42,7 @@ const TwoColumnImageAndText = (props: TwoColumnImageAndTextProps): JSX.Element =
         <div className="w-full pl-1">
           <Link href="mailto:frank@frankcostoya.com" passHref>
             <div className="flex cursor-pointer items-center justify-center h-14 w-56 rounded-full bg-design-red hover:bg-design-orange text-white">
-              Free Consultation
+              <Text field={props.fields.ctaText} />
             </div>
           </Link>
         </div>

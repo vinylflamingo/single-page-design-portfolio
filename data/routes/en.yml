@@ -30,7 +30,7 @@ placeholders:
       fields:
         heading: I'm Amy, and I'd love to work on your next project
         subheading: I love working with others to create beautiful design solutions. I've designed everything from brand illustrations to complete mobile apps. I'm also handy with a camera!
-        ctaText: Free Consultation
+        ctaText: Learn More
         image: 
           src: /data/media/img/amy.png
           alt: Sitecore Logo
@@ -42,5 +42,11 @@ placeholders:
           - id: slide3
           - id: slide4
           - id: slide5
+    - componentName: LargeCTA
+      fields:
+        heading: Book a call with me
+        subheading: I'd love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. The we can move forward from there.
+        ctaText: Book Now
+    - componentName: Navigation
 
 
