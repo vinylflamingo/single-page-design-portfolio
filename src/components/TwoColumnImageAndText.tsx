@@ -24,22 +24,22 @@ type TwoColumnImageAndTextProps = ComponentProps & {
  */
 const TwoColumnImageAndText = (props: TwoColumnImageAndTextProps): JSX.Element => (
   <section id="Who am I?">
-    <div className="flex flex-row max-w-6xl py-12">
-      <div className="w-2/4 flex items-center justify-center p-10">
+    <div className="flex flex-col lg:flex-row max-w-6xl py-6">
+      <div className="lg:w-2/4 flex items-center justify-center p-10">
         <Image media={props.fields.image} />
       </div>
-      <div className="w-2/4 flex flex-col items-center justify-between p-15 py-28">
+      <div className="pt-8 lg:w-2/4 flex flex-col items-center justify-between p-15 lg:py-28">
         <Text
           tag="h2"
-          className=" text-3xl md:text-4xl font-jakartaBold pr-20"
+          className="text-2xl sm:text-3xl md:text-4xl font-jakartaBold px-8 md:px-0 text-center lg:text-left"
           field={props.fields.heading}
         />
         <Text
           tag="p"
-          className=" text-lg max-w-xl md:max-w-3xl pr-4 px-0.5 flex leading-8 text-design-grey"
+          className="pt-10 lg:pt-0 text-base text-center sm:text-left sm:text-lg max-w-xl md:max-w-3xl pr-4 px-0.5 flex leading-8 text-design-grey"
           field={props.fields.subheading}
         />
-        <div className="w-full pl-1">
+        <div className="w-full lg:pl-1 flex justify-center items-center pt-10">
           <Link href="mailto:frank@frankcostoya.com" passHref>
             <div className="flex cursor-pointer items-center justify-center h-14 w-56 rounded-full bg-design-red hover:bg-design-orange text-white">
               <Text field={props.fields.ctaText} />

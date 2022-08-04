@@ -2,8 +2,8 @@ const ServicesGrid = (): JSX.Element => {
   return (
     <section>
       <div className="flex p-3 w-screen max-w-5xl">
-        <ul className="grid grid-cols-6 grid-rows-2 gap-6 w-full object-contain h-80 text-white font-jakartaBold">
-          <li className="col-span-2 row-span-full bg-design-purple rounded-md">
+        <ul className="grid grid-cols-4 grid-row-3 sm:grid-cols-4 sm:grid-rows-3 md:grid-cols-6 md:grid-rows-2 gap-4 lg:gap-6 w-full object-contain h-fit md:h-80 text-white font-jakartaBold text-sm sm:text-xl">
+          <li className="col-span-6 row-span-2 sm:col-span-2 sm:row-span-2 md:col-span-2 md:row-span-full bg-design-purple rounded-md">
             <div className="flex flex-col p-4 justify-between h-full">
               <div className="flex flex-row justify-end">
                 <svg
@@ -12,7 +12,7 @@ const ServicesGrid = (): JSX.Element => {
                   viewBox="0 0 128 192"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="object-scale-down"
+                  className="w-3/4 h-3/4 sm:w-fit sm:h-fit"
                 >
                   <rect width="64" height="128" fill="#552049" />
                   <circle cx="32" cy="32" r="14" stroke="#FFF7F0" strokeWidth="4" />
@@ -62,10 +62,10 @@ const ServicesGrid = (): JSX.Element => {
                   <rect x="28" y="156" width="4" height="4" fill="#030303" />
                 </svg>
               </div>
-              <div className="text-xl">Graphic Design</div>
+              <div className="">Graphic Design</div>
             </div>
           </li>
-          <li className="col-span-1 row-span-1 bg-design-orange rounded-md">
+          <li className="col-span-6 row-span-1  sm:col-span-1 sm:row-span-1 bg-design-orange rounded-md">
             <div className="flex flex-col p-4 justify-between h-full">
               <div className="flex flex-row justify-end">
                 <svg
@@ -94,10 +94,10 @@ const ServicesGrid = (): JSX.Element => {
                   />
                 </svg>
               </div>
-              <div className="text-xl">UI/UX</div>
+              <div className="">UI/UX</div>
             </div>
           </li>
-          <li className="col-span-1 row-span-1 bg-design-pink rounded-md">
+          <li className="col-span-6 sm:row-span-1 sm:col-span-1 md:col-span-1 md:row-span-1 bg-design-pink rounded-md">
             <div className="flex flex-col p-4 justify-between h-full">
               <div className="flex flex-row justify-end">
                 <svg
@@ -123,10 +123,10 @@ const ServicesGrid = (): JSX.Element => {
                   <rect x="60" y="14" width="4" height="4" fill="#030303" />
                 </svg>
               </div>
-              <div className="text-xl">Apps</div>
+              <div className="">Apps</div>
             </div>
           </li>
-          <li className="col-span-2 row-span-1 bg-design-cyan rounded-md">
+          <li className="col-span-8 sm:col-span-2 sm:row-span-1 bg-design-cyan rounded-md">
             <div className="flex flex-col p-4 justify-between h-full">
               <div className="flex flex-row justify-end">
                 <svg
@@ -135,6 +135,7 @@ const ServicesGrid = (): JSX.Element => {
                   viewBox="0 0 160 64"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
+                  className="w-3/4 h-3/4 sm:w-fit sm:h-fit"
                 >
                   <rect x="32" width="64" height="64" fill="#EB7565" />
                   <circle cx="16" cy="16" r="14" stroke="#030303" strokeWidth="4" />
@@ -183,10 +184,10 @@ const ServicesGrid = (): JSX.Element => {
                   />
                 </svg>
               </div>
-              <div className="text-xl">Photography</div>
+              <div className="">Photography</div>
             </div>
           </li>
-          <li className="col-span-2 row-span-1 bg-design-red rounded-md">
+          <li className="col-span-4 sm:col-span-2 sm:row-span-1 bg-design-red rounded-md">
             <div className="flex flex-col p-4 justify-between h-full">
               <div className="flex flex-row justify-end">
                 <svg
@@ -245,10 +246,10 @@ const ServicesGrid = (): JSX.Element => {
                   />
                 </svg>
               </div>
-              <div className="text-xl">Illustrations</div>
+              <div className="">Illustrations</div>
             </div>
           </li>
-          <li className="col-span-2 row-span-1 bg-design-violet rounded-md">
+          <li className="col-span-12 sm:col-span-2 sm:row-span-1 bg-design-violet rounded-md">
             <div className="flex flex-col p-4 justify-between h-full">
               <div className="flex flex-row justify-end">
                 <svg
@@ -291,7 +292,7 @@ const ServicesGrid = (): JSX.Element => {
                   />
                 </svg>
               </div>
-              <div className="text-xl">Motion Graphics</div>
+              <div className="">Motion Graphics</div>
             </div>
           </li>
         </ul>

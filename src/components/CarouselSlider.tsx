@@ -36,19 +36,22 @@ const CarouselSlider = (props: CarouselSliderProps): JSX.Element => {
             slidesPerView: 3,
             spaceBetween: 20,
           },
-          700: {
+          600: {
             slidesPerView: 2,
-            spaceBetween: 20,
+            spaceBetween: 0,
+          },
+          20: {
+            slidesPerView: 1,
+            spaceBetween: 0,
           },
         }}
         centeredSlides={true}
         centeredSlidesBounds={true}
         slidesPerView={1}
-        spaceBetween={1}
       >
         {props.fields.slides &&
           props.fields.slides.map((item, index) => (
-            <SwiperSlide key={`slide-${index}`} className="w-full h-full">
+            <SwiperSlide key={`slide-${index}`} className="w-full h-full m-0">
               <Image field={item.fields.image as ImageField} className="rounded-lg h-full" />
             </SwiperSlide>
           ))}
